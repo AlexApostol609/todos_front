@@ -6,7 +6,7 @@ const DeleteTodo = ({ todoId, onDelete }) => {
     axios
       .delete(`http://localhost:4000/todo/${todoId}`)
       .then(() => {
-        onDelete(todoId); // Notify the parent component that the todo was deleted
+        onDelete(todoId); 
       })
       .catch((error) => {
         console.error('Error deleting todo:', error);

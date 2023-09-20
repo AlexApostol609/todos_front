@@ -6,7 +6,7 @@ const AddTodo = ({ onAdd }) => {
     const [newTodo, setNewTodo] = useState({
         title: '',
         description: '',
-        done: false, // Initialize as a boolean
+        done: false, 
     });
 
     const handleInputChange = (e) => {
